@@ -86,7 +86,8 @@ class LinkedList:
                     count+=1
 
     def sortedTheList(self):
-        pass
+        dmmay = Node(0)
+        
             
 
     def displayList(self):
