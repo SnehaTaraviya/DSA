@@ -125,52 +125,44 @@ class LinkedList:
 
 
 linkedList = LinkedList()
-linkedList.insertAtBegin(10)
-print(linkedList.sortTheList())
-
-
-# print("~~~~~~ singlyLinkedList ~~~~~~~\n")
-# while True:
-#     print(" 1. Add Node at Begin\n",
-#           "2. Add Node at a any spesific point (Enter index Number)\n",
-#           "3. Remove any Node using value\n",
-#           "4. Remove any specific Node (Enter index Number)\n",
-#           "5. Sort the List \n",
-#           "6. Print LinkedList\n",
-#           "7. Return Lenght of List\n",
-#           "8. Exit\n",)
-#     i = int(input("Which operation do want to perform?"))
-#     print("\n")
-#     m = int(input("How many ele do you want to add?"))
-#     nums = [int(input("")) for i in range(m)]
-#     if i == 1:
-#         for i in range(len(nums)):
-#             linkedList.insertAtBegin(nums[i])
-#         print("Current list: ",linkedList.displayList())
-#         print("\n")
-#     elif i == 2:
-#         m = int(input("Enter index number: "))
-#         num = int(input("Enter val of node: "))
-#         linkedList.insertAtSpecificPoint(num,m)
-#         print("Current list: ",linkedList.displayList())
-#         print("\n")
-#     elif i == 3:
-#         num = int(input("Which val do you want to remove? "))
-#         linkedList.removeNodeByVal(num)
-#         print("Current list ",linkedList.displayList())
-#         print("\n")
-#     elif i == 4:
-#         m = int(input("which node do you want to remove? "))
-#         linkedList.removeNodeByIndex(m)
-#         print("Current list: ",linkedList.displayList())
-#         print("\n")
-#     elif i == 5:
-#         for i in range(len(nums)):
-#             linkedList.sortTheList(nums[i])
-#     elif i == 6:
-#         print(linkedList.displayList())
-#     elif i == 7:
-#         print(linkedList.lengthOfList())
-#     elif i == 8:
-#         print(linkedList.exit())
-#         break
+print("~~~~~~ singlyLinkedList ~~~~~~~\n")
+while True:
+    print(" 1. Add Node at Begin\n",
+          "2. Add Node at a any spesific point (Enter index Number)\n",
+          "3. Remove any Node using value\n",
+          "4. Remove any specific Node (Enter index Number)\n",
+          "6. Print LinkedList\n",
+          "7. Return Lenght of List\n",
+          "8. Exit\n",)
+    i = int(input("Which operation do want to perform?"))
+    print("\n")
+    m = int(input("How many ele do you want to add?"))
+    nums = [int(input("")) for i in range(m)]
+    if i == 1:
+        for i in range(len(nums)):
+            linkedList.insertAtBegin(nums[i])
+        print("Current list: ",linkedList.displayList())
+        print("\n")
+    elif i == 2:
+        m = int(input("Enter index number: "))
+        num = int(input("Enter val of node: "))
+        linkedList.insertAtSpecificPoint(num,m)
+        print("Current list: ",linkedList.displayList())
+        print("\n")
+    elif i == 3:
+        num = int(input("Which val do you want to remove? "))
+        linkedList.removeNodeByVal(num)
+        print("Current list ",linkedList.displayList())
+        print("\n")
+    elif i == 4:
+        m = int(input("which node do you want to remove? "))
+        linkedList.removeNodeByIndex(m)
+        print("Current list: ",linkedList.displayList())
+        print("\n")
+    elif i == 6:
+        print(linkedList.displayList())
+    elif i == 7:
+        print(linkedList.lengthOfList())
+    elif i == 8:
+        print(linkedList.exit())
+        break
