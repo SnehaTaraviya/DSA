@@ -84,6 +84,9 @@ class LinkedList:
                         return
                     current = current.next
                     count+=1
+
+    def sortedTheList(self):
+        pass
             
 
     def displayList(self):
@@ -159,6 +162,8 @@ while True:
         linkedList.removeNodeByIndex(m)
         print("Current list: ",linkedList.displayList())
         print("\n")
+    elif i == 5:
+        print("Sorted List", linkedList.sortedTheList())
     elif i == 6:
         print(linkedList.displayList())
     elif i == 7:
