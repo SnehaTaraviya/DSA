@@ -85,11 +85,6 @@ class LinkedList:
                     current = current.next
                     count+=1
 
-    def sortedTheList(self):
-        dmmay = Node(0)
-        
-            
-
     def displayList(self):
         result = []
         if self.head == None:
@@ -131,10 +126,11 @@ class LinkedList:
 linkedList = LinkedList()
 print("~~~~~~ singlyLinkedList ~~~~~~~\n")
 while True:
-    print(" 1. Add Node at Begin\n",
-          "2. Add Node at a any spesific point (Enter index Number)\n",
-          "3. Remove any Node using value\n",
-          "4. Remove any specific Node (Enter index Number)\n",
+    print(" 1. Create a new List\n",
+          "2. Add Node at Begin\n",
+          "3. Add Node at a any spesific point (Enter index Number)\n",
+          "4. Remove any Node using value\n",
+          "5. Remove any specific Node (Enter index Number)\n",
           "6. Print LinkedList\n",
           "7. Return Lenght of List\n",
           "8. Exit\n",)
@@ -144,27 +140,30 @@ while True:
     nums = [int(input("")) for i in range(m)]
     if i == 1:
         for i in range(len(nums)):
-            linkedList.insertAtBegin(nums[i])
+            linkedList.insertAtEnd(nums[i])
         print("Current list: ",linkedList.displayList())
         print("\n")
     elif i == 2:
+        num = int(input("Enter val of node: "))
+        linkedList.insertAtBegin(num)
+        print("Current list: ",linkedList.displayList())
+        print("\n")
+    elif i == 3:
         m = int(input("Enter index number: "))
         num = int(input("Enter val of node: "))
         linkedList.insertAtSpecificPoint(num,m)
         print("Current list: ",linkedList.displayList())
         print("\n")
-    elif i == 3:
+    elif i == 4:
         num = int(input("Which val do you want to remove? "))
         linkedList.removeNodeByVal(num)
         print("Current list ",linkedList.displayList())
         print("\n")
-    elif i == 4:
+    elif i == 5:
         m = int(input("which node do you want to remove? "))
         linkedList.removeNodeByIndex(m)
         print("Current list: ",linkedList.displayList())
         print("\n")
-    elif i == 5:
-        print("Sorted List", linkedList.sortedTheList())
     elif i == 6:
         print(linkedList.displayList())
     elif i == 7:
