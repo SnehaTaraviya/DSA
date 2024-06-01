@@ -13,7 +13,7 @@ This project implements a Singly Linked List in Python with various functionalit
   **i. Insertion Methods:**
       **insertAtBegin(val):** Inserts a new node with the specified value at the beginning of the list.
       **insertAtEnd(val):** Inserts a new node with the specified value at the end of the list.
-     ** insertAtSpecificPoint(val, index)**: Inserts a new node with the specified value at a given position in the list.
+     **insertAtSpecificPoint(val, index)**: Inserts a new node with the specified value at a given position in the list.
   **ii. Deletion Methods:**
       **removeNodeByVal(val):** Removes a node with the specified value from the list.
       **removeNodeByIndex(index):** Removes a node at the specified position from the list.
@@ -39,6 +39,7 @@ The interactive menu allows users to perform the following operations:
 
 
 **Project Benefits:**
+
 **1. Educational Value:** Helps users understand the core concepts of linked lists, including node creation, list traversal, and node insertion and deletion.
 **2. Practical Application:** Provides a foundation for implementing more complex data structures and algorithms.
 **3. Interactive Learning:** The menu-driven interface makes it easy for users to experiment with different operations and see the results in real time.
