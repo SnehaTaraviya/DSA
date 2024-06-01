@@ -3,9 +3,11 @@ This project implements a Singly Linked List in Python with various functionalit
 **Implementation Details**
 
 **1. Class Definitions:**
+
   **i.Node Class:** Represents a single node in the linked list.
     data: Stores the value of the node.
     next: Points to the next node in the list (initially set to None).
+    
   **ii. LinkedList Class:** Manages the linked list operations.
     head: Points to the first node in the linked list (initially set to None).
     
@@ -41,5 +43,7 @@ The interactive menu allows users to perform the following operations:
 **Project Benefits:**
 
 **1. Educational Value:** Helps users understand the core concepts of linked lists, including node creation, list traversal, and node insertion and deletion.
+
 **2. Practical Application:** Provides a foundation for implementing more complex data structures and algorithms.
+
 **3. Interactive Learning:** The menu-driven interface makes it easy for users to experiment with different operations and see the results in real time.
