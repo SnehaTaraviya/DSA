@@ -38,7 +38,7 @@ The interactive menu allows users to perform the following operations:
 8. Exit the program.
 
 
-**Project Benefits**
+**Project Benefits:**
 **1. Educational Value:** Helps users understand the core concepts of linked lists, including node creation, list traversal, and node insertion and deletion.
 **2. Practical Application:** Provides a foundation for implementing more complex data structures and algorithms.
 **3. Interactive Learning:** The menu-driven interface makes it easy for users to experiment with different operations and see the results in real time.
