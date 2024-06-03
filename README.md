@@ -24,6 +24,10 @@ This project implements a Singly Linked List in Python with various functionalit
   
       removeNodeByVal(val): Removes a node with the specified value from the list.
       removeNodeByIndex(index): Removes a node at the specified position from the list.
+  **Sorting Method:**
+
+      Implements a Bubble Sort algorithm.
+      Traverses the linked list and compares each node’s data with the subsequent nodes.
   **ii. Utility Methods:**
   
       displayList(): Returns the current state of the list as a string.
