@@ -85,6 +85,18 @@ class LinkedList:
                     current = current.next
                     count+=1
 
+    def sortTheList(self):
+        if self.head == None:
+            return "List is Empty!"
+        current = sself.head
+        while curretn:
+            index = curretn.next
+            while index:
+                if current.data > index.data:
+                    curretn.data,index.data = index.data,curretn.data
+                index = index.next
+            current = current.next
+    
     def displayList(self):
         result = []
         if self.head == None:
@@ -131,9 +143,10 @@ while True:
           "3. Add Node at a any spesific point (Enter index Number)\n",
           "4. Remove any Node using value\n",
           "5. Remove any specific Node (Enter index Number)\n",
-          "6. Print LinkedList\n",
-          "7. Return Lenght of List\n",
-          "8. Exit\n",)
+          "6. Sort the List",
+          "7. Print LinkedList\n",
+          "8. Return Lenght of List\n",
+          "9. Exit\n",)
     i = int(input("Which operation do want to perform?"))
     print("\n")
     m = int(input("How many ele do you want to add?"))
@@ -166,8 +179,12 @@ while True:
         print("\n")
     elif i == 6:
         print(linkedList.displayList())
+        linkedList.sortTheList()
+        print(linkedList.displayList())
     elif i == 7:
-        print(linkedList.lengthOfList())
+        print(linkedList.displayList())
     elif i == 8:
+        print(linkedList.lengthOfList())
+    elif i == 9:
         print(linkedList.exit())
         break
