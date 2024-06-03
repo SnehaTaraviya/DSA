@@ -88,12 +88,12 @@ class LinkedList:
     def sortTheList(self):
         if self.head == None:
             return "List is Empty!"
-        current = sself.head
+        current = self.head
         while curretn:
-            index = curretn.next
+            index = current.next
             while index:
                 if current.data > index.data:
-                    curretn.data,index.data = index.data,curretn.data
+                    current.data,index.data = index.data,current.data
                 index = index.next
             current = current.next
     
